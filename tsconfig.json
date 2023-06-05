@@ -1,0 +1,59 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext",
+      "scripthost"
+    ],
+    "allowJs": false,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "moduleResolution": "Node",
+    "noEmit": false,
+    "noFallthroughCasesInSwitch": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "@components": [
+        "src/components/index"
+      ],
+      "@models": [
+        "src/models/index"
+      ],
+      "@pages": [
+        "src/pages/index"
+      ],
+      "@actions": [
+        "src/redux/actions/actions"
+      ],
+      "@reducers": [
+        "src/redux/reducers/reducers"
+      ],
+      "@sagas": [
+        "src/redux/sagas/sagas"
+      ],
+      "@types": [
+        "src/redux/types/types"
+      ],
+    }
+  },
+  "include": [
+    "types",
+    "src"
+  ],
+  "exclude": [],
+  "plugins": [
+    {
+      "name": "typescript-plugin-css-modules"
+    }
+  ]
+}

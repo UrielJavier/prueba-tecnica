@@ -1,0 +1,13 @@
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.submit {
+    align-self: center;
+    width: 8rem;
+    min-width: 4rem;
+}

@@ -1,0 +1,17 @@
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 100%;
+    max-width: 20rem;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+label > p {
+    margin: 0;
+    margin-bottom: 0.4rem;
+}

@@ -1,0 +1,27 @@
+.submissions {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow-y: scroll;
+    margin: 0.5rem 0;
+    width: 100%;
+    max-width: 30rem;
+}
+
+.thead {
+    position: sticky;
+    top: 0;
+    background-color: #ffdc41a3;
+}
+
+.tr {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.3rem 0;
+    border-bottom: 1px solid rgba(124, 124, 124, 0.458);
+}
+
+.subfield {
+    margin: 0;
+}

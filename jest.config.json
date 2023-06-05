@@ -1,0 +1,33 @@
+{
+    "testEnvironment": "jsdom",
+    "transform": {
+        "^.+\\.tsx?$": "ts-jest"
+    },
+    "setupFilesAfterEnv": [
+        "@testing-library/jest-dom/extend-expect"
+    ],
+    "moduleNameMapper": {
+        "@components": [
+            "<rootDir>/src/components/index"
+        ],
+        "@models": [
+            "<rootDir>/src/models/index"
+        ],
+        "@pages": [
+            "<rootDir>/src/pages/index"
+        ],
+        "@actions": [
+            "<rootDir>/src/redux/actions/actions"
+        ],
+        "@reducers": [
+            "<rootDir>/src/redux/reducers/reducers"
+        ],
+        "@sagas": [
+            "<rootDir>/src/redux/sagas/sagas"
+        ],
+        "@types": [
+            "<rootDir>/src/redux/types/types"
+        ],
+        "\\.css$": "identity-obj-proxy"
+    }
+}

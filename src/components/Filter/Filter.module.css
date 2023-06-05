@@ -1,0 +1,53 @@
+
+.filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.filter > *, .buttonsFilter > button, .inputnumbers > * {
+    margin-top: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 0;
+}
+
+.filter > * {
+
+}
+
+.filter > label > input[type=text]{
+
+}
+
+.filter > label > input[type=number]{
+
+}
+
+.inputnumbers {
+    display: flex;
+    margin: 0;
+}
+
+.buttonsFilter {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .filter > * {
+        width: 100%;
+    }
+    
+    .filter > label > input[type=text]{
+    
+    }
+    
+    .filter > label > input[type=number]{
+    
+    }
+    
+    .inputnumbers > * {
+        width: 50%;
+    }
+}

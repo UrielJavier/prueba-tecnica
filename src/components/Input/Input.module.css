@@ -1,0 +1,24 @@
+.primary {
+    margin: 0;
+    padding: 0.5rem 0.8rem;
+    border: none;
+    border-bottom: 1px solid #ecececff;
+    box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+.primary:focus-visible {
+  outline-width: 0;
+  border-bottom: 1px solid #00dc5a;
+}
+
+.seconday {
+}
+
+.label {
+    margin-bottom: 0.4rem;
+}
+
+.textLabel {
+  font-weight: 500;
+  font-size: small;  
+}
