@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import { Provider } from 'react-redux';
 import createSagaMiddleware from 'redux-saga'
-import { configureStore } from '@reduxjs/toolkit';
+import { configureStore } from '@reduxjs/toolkit';
 
 import { Dashboard, Login, Submissions, TaxForm } from "@pages";
 import { Layout, PrivateRoutes } from '@components';

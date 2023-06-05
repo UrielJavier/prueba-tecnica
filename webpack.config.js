@@ -21,7 +21,7 @@ const webpackConfig = (env) => ({
     new HtmlWebpackPlugin({
       template: path.join(__dirname, "public", "index.html"),
     }),
-    new webpack.DefinePlugin({process: { env: envKeys(env)}})
+    new webpack.DefinePlugin({ process: { env: envKeys(env) } })
   ],
   module: {
     // exclude node_modules
@@ -31,14 +31,14 @@ const webpackConfig = (env) => ({
         exclude: /node_modules/,
         use: ["babel-loader"],
       },
-      { 
-        test: /\.(ts|tsx)$/, 
-        loader: "ts-loader" 
+      {
+        test: /\.(ts|tsx)$/,
+        loader: "ts-loader"
       },
       {
         test: /\.css$/,
         use: [
-          {loader: "style-loader"},
+          { loader: "style-loader" },
           {
             loader: "css-loader",
             options: {
@@ -52,15 +52,15 @@ const webpackConfig = (env) => ({
   },
   resolve: {
     extensions: [".*", ".js", '.jsx', ".ts", '.tsx'],
-      alias: {
-        '@components': path.resolve(__dirname, 'src/components/index'),
-        '@models': path.resolve(__dirname, 'src/models/index'),
-        '@pages': path.resolve(__dirname, 'src/pages/index'),
-        '@actions': path.resolve(__dirname, 'src/redux/actions/actions'),
-        '@reducers': path.resolve(__dirname, 'src/redux/reducers/reducers'),
-        '@sagas': path.resolve(__dirname, 'src/redux/sagas/sagas'),
-        '@types': path.resolve(__dirname, 'src/redux/types/types'),
-      },
+    alias: {
+      '@components': path.resolve(__dirname, 'src/components/index'),
+      '@models': path.resolve(__dirname, 'src/models/index'),
+      '@pages': path.resolve(__dirname, 'src/pages/index'),
+      '@actions': path.resolve(__dirname, 'src/redux/actions/actions'),
+      '@reducers': path.resolve(__dirname, 'src/redux/reducers/reducers'),
+      '@sagas': path.resolve(__dirname, 'src/redux/sagas/sagas'),
+      '@types': path.resolve(__dirname, 'src/redux/types/types'),
+    },
   },
   devServer: {
     static: {
